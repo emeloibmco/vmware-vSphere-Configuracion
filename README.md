@@ -6,6 +6,8 @@
 1. [Requisitos](#Requisitos-newspaper)
 2. [Creación y gestión de clave API para infraestructura clásica](#creación-y-gestión-de-la-clave-api-para-infraestructura-clásica-key)
 3. [Despliegue de VMware Solutions Dedicated - VMware vSphere]
+4. [Referencias]
+5. [Autores]
 
 ## Requisitos: newspaper:
 * Contar con una cuenta en <a href="https://cloud.ibm.com/"> IBM Cloud</a>
@@ -23,3 +25,23 @@ Antes de iniciar el despliegue de la plataforma *VMware vSphere* es necesario cr
 <p align="center">
 <img width="800" alt="img8" src=Imagenes/API.png>
 </p>
+
+
+
+
+
+
+
+
+
+
+# Referencias 📖
+
+* [Gestión de claves de API de la infraestructura clásica](https://cloud.ibm.com/docs/account?topic=account-classic_keys#create-classic-infrastructure-key).
+* [Iniciación a VMware Solutions](https://cloud.ibm.com/docs/vmwaresolutions?topic=vmwaresolutions-getting-started).
+
+## Autores :black_nib:
+Equipo IBM Cloud Tech Sales Colombia.
+<br />
+
+     
