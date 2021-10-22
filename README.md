@@ -19,3 +19,7 @@ Antes de iniciar el despliegue de la plataforma *VMware vSphere* es necesario cr
 1. En la consola de IBM Cloud, vaya a ```Gestionar/Manage > Acceso (IAM)/Access (IAM)```, esto lo llevara a una nueva ventana y aquí de click sobre el botón ```Claves API/API keys```.
 2. Esto lo llevara a la ventana de claves API, aqui cambie la vista a claves API de la infraestructura clásica y de click sobre el botón ```Crear una clave de infraestructura clásica/Create classic infrastructure key```.
 3. luego de esto copie y descargue la clave de API en un lugar seguro para poder utilizarla mas adelante.
+
+<p align="center">
+<img width="800" alt="img8" src=>
+</p>
