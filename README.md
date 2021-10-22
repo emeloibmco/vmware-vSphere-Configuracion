@@ -21,5 +21,5 @@ Antes de iniciar el despliegue de la plataforma *VMware vSphere* es necesario cr
 3. luego de esto copie y descargue la clave de API en un lugar seguro para poder utilizarla mas adelante.
 
 <p align="center">
-<img width="800" alt="img8" src=>
+<img width="800" alt="img8" src=Imagenes/API.png>
 </p>
