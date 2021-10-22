@@ -4,7 +4,7 @@
 
 ## Tabla de contenido 📑
 1. [Requisitos](#Requisitos-newspaper)
-2. [Creación y gestión de clave API para infraestructura clásica]
+2. [Creación y gestión de clave API para infraestructura clásica](#creación-y-gestión-de-la-clave-api-para-infraestructura-clásica-key)
 3. [Despliegue de VMware Solutions Dedicated - VMware vSphere]
 
 ## Requisitos: newspaper:
