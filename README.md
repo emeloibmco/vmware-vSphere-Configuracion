@@ -13,14 +13,26 @@
 ## Requisitos: newspaper:
 * Contar con una cuenta en <a href="https://cloud.ibm.com/"> IBM Cloud</a>
 * Contar con una cuenta de infraestructura en <a href="https://cloud.ibm.com/"> IBM Cloud</a>
-* Tener instalado <a href="https://support.arraynetworks.net/prx/001/http/supportportal.arraynetworks.net/downloads/downloads.html"> MotionPro</a>
+
 
 
 ## Configuración de conexión a VPN con SSL desde clientes de MotionPro.
-Antes de inciar con la descarga y configuracion del software MotionPro es necesario habilitar el acceso VPN con SSL en su cuenta de *IBM Cloud*, para esto tenga en cuenta los siguientes pasos:
-1. Desde la consola de *IBM Cloud* vaya a ```Gestionar/Manage > Acceso (IAM)/Access (IAM)```, esto lo llevara a una nueva ventana y aqui de click sobre el boton ``Usuarios/Users```.
+Antes de iniciar con la descarga y configuración del software MotionPro es necesario habilitar el acceso VPN con SSL en su cuenta de *IBM Cloud*, para esto tenga en cuenta los siguientes pasos:
+1. Desde la consola de *IBM Cloud* vaya a ```Gestionar/Manage > Acceso (IAM)/Access (IAM)```, esto lo llevara a una nueva ventana y aquí de click sobre el botón ``Usuarios/Users```.
 2. Seleccione el nombre del usuario al cual desea asignarle acceso VPN con SSL.
-3. En la pagina principal del ususario de click sobre el boton 
+3. En la pagina principal del usuario de click sobre el botón ```Infraestructura clásica/Classic infrastructure``` y luego de click sobre ```Subredes VPN/VPN subnets```
+4. seleccione el campo de ```Habilitar acceso VPN con SSL/Enable SSL VPN Access``` y de click en el botón ```Guardar```
+
+Luego de haber habilitado el acceso VPN con SSL en su cuenta debe actualizar la contraseña de VPN de infraestructura clásica para poder establecer la conexión mas adelante, para esto tenga en cuenta los siguientes pasos:
+1. Desde la consola de *IBM Cloud* vaya a ```Gestionar/Manage > Acceso (IAM)/Access (IAM)```, esto lo llevara a una nueva ventana y aquí de click sobre el botón ``Usuarios/Users```.
+2. Seleccione el nombre del usuario al cual le quiere modificar la contraseña.
+3. En la pestaña de detalles de usuario vaya a la sección ```Contraseña de VPN```y de click sobre el botón ```Editar``` para ingresar la nueva contraseña, luego de esto de click sobre el botón ```Aplicar```.
+
+Una vez terminados estos dos procesos puede continuar con la instalación y configuración de MotionPro, para esto tenga en cuenta los siguientes pasos:
+1. Descargue la versión de MotionPro adecuada para su sistema operativo en el siguiente <a href="https://support.arraynetworks.net/prx/001/http/supportportal.arraynetworks.net/downloads/downloads.html"> Link</a>
+2. Ejecute MotionProSetup para instalar el software.
+3. Ejecute el asistente de configuración de MotionPro. A continuación, pulse en el icono de MotionPro del escritorio y seleccione Perfil > Añadir.
+
 
 ## Creación y gestión de la clave API para infraestructura clásica :key:
 
