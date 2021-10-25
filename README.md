@@ -4,7 +4,7 @@
 
 ## Tabla de contenido 📑
 1. [Requisitos](#Requisitos-newspaper)
-2. [Configuración de conexión a VPN con SSL desde clientes de MotionPro]
+2. [Configuración de conexión a VPN con SSL desde clientes de MotionPro](#configuración-de-conexión-a-vpn-con-ssl-desde-clientes-de-motionpro)
 3. [Creación y gestión de clave API para infraestructura clásica](#creación-y-gestión-de-la-clave-api-para-infraestructura-clásica-key)
 4. [Despliegue de VMware Solutions Dedicated - VMware vSphere]
 5. [Referencias](#referencias-)
