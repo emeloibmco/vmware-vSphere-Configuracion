@@ -20,8 +20,8 @@
 Antes de iniciar con la descarga y configuración del software MotionPro es necesario habilitar el acceso VPN con SSL en su cuenta de *IBM Cloud*, para esto tenga en cuenta los siguientes pasos:
 1. Desde la consola de *IBM Cloud* vaya a ```Gestionar/Manage > Acceso (IAM)/Access (IAM)```, esto lo llevara a una nueva ventana y aquí de click sobre el botón ``Usuarios/Users```.
 2. Seleccione el nombre del usuario al cual desea asignarle acceso VPN con SSL.
-3. En la pagina principal del usuario de click sobre el botón ```Infraestructura clásica/Classic infrastructure``` y luego de click sobre ```Subredes VPN/VPN subnets```
-4. seleccione el campo de ```Habilitar acceso VPN con SSL/Enable SSL VPN Access``` y de click en el botón ```Guardar```
+3. En la pagina principal del usuario de click sobre el botón ```Infraestructura clásica/Classic infrastructure``` y luego de click sobre ```Subredes VPN/VPN subnets```.
+4. seleccione el campo de ```Habilitar acceso VPN con SSL/Enable SSL VPN Access``` y de click en el botón ```Guardar```.
 
 <p align="center">
 <img width="800" alt="img8" src=Imagenes/Enable.png>
@@ -38,9 +38,10 @@ Luego de haber habilitado el acceso VPN con SSL en su cuenta debe actualizar la 
 </p>
 
 Una vez terminados estos dos procesos puede continuar con la instalación y configuración de MotionPro, para esto tenga en cuenta los siguientes pasos:
-1. Descargue la versión de MotionPro adecuada para su sistema operativo en el siguiente <a href="https://support.arraynetworks.net/prx/001/http/supportportal.arraynetworks.net/downloads/downloads.html"> Link</a>
+1. Descargue la versión de MotionPro adecuada para su sistema operativo en el siguiente <a href="https://support.arraynetworks.net/prx/001/http/supportportal.arraynetworks.net/downloads/downloads.html"> Link</a>.
 2. Ejecute MotionProSetup para instalar el software.
-3. Ejecute el asistente de configuración de MotionPro. A continuación, pulse en el icono de MotionPro del escritorio y seleccione Perfil > Añadir.
+3. Ejecute el asistente de configuración de MotionPro.
+4. A continuación, pulse en el icono de MotionPro del escritorio y seleccione Perfil > Añadir.
 
 
 ## Creación y gestión de la clave API para infraestructura clásica :key:
