@@ -4,15 +4,23 @@
 
 ## Tabla de contenido 📑
 1. [Requisitos](#Requisitos-newspaper)
-2. [Creación y gestión de clave API para infraestructura clásica](#creación-y-gestión-de-la-clave-api-para-infraestructura-clásica-key)
-3. [Despliegue de VMware Solutions Dedicated - VMware vSphere]
-4. [Referencias](#referencias-)
-5. [Autores](#autores-black_nib)
+2. [Configuración de conexión a VPN con SSL desde clientes de MotionPro]
+3. [Creación y gestión de clave API para infraestructura clásica](#creación-y-gestión-de-la-clave-api-para-infraestructura-clásica-key)
+4. [Despliegue de VMware Solutions Dedicated - VMware vSphere]
+5. [Referencias](#referencias-)
+6. [Autores](#autores-black_nib)
 
 ## Requisitos: newspaper:
 * Contar con una cuenta en <a href="https://cloud.ibm.com/"> IBM Cloud</a>
 * Contar con una cuenta de infraestructura en <a href="https://cloud.ibm.com/"> IBM Cloud</a>
 * Tener instalado <a href="https://support.arraynetworks.net/prx/001/http/supportportal.arraynetworks.net/downloads/downloads.html"> MotionPro</a>
+
+
+## Configuración de conexión a VPN con SSL desde clientes de MotionPro.
+Antes de inciar con la descarga y configuracion del software MotionPro es necesario habilitar el acceso VPN con SSL en su cuenta de *IBM Cloud*, para esto tenga en cuenta los siguientes pasos:
+1. Desde la consola de *IBM Cloud* vaya a ```Gestionar/Manage > Acceso (IAM)/Access (IAM)```, esto lo llevara a una nueva ventana y aqui de click sobre el boton ``Usuarios/Users```.
+2. Seleccione el nombre del usuario al cual desea asignarle acceso VPN con SSL.
+3. En la pagina principal del ususario de click sobre el boton 
 
 ## Creación y gestión de la clave API para infraestructura clásica :key:
 
