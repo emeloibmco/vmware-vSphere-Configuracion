@@ -8,7 +8,7 @@
 3. [Creación y gestión de clave API para infraestructura clásica](#creación-y-gestión-de-la-clave-api-para-infraestructura-clásica-key)
 4. [Despliegue de Baremetal con VMware Solutions](#despliegue-de-baremetal-con-vmware-solutions)
     * [Opción 1: VCenter appliance](#opción-1-vcenter-appliance) 
-    * [Opción 2: Virtual server] 
+    * [Opción 2: Virtual server](#opción-2-virtual-server) 
 6. [Referencias](#referencias-)
 7. [Autores](#autores-black_nib)
 
