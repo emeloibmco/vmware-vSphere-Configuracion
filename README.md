@@ -48,7 +48,9 @@ Una vez terminados estos dos procesos puede continuar con la instalación y conf
      * Nombre de usuario: utilice el nombre de usuario que se encuentra en la pestaña de detalles de usuario en la sección ```Contraseña de VPN```
 6. Luego de esto de click sobre el boton guardar.
 7. para efectuar la conexion tenga a mano la contraseña generada anteriormente y de click en el boton ```Login```del perfil.
-
+<p align="center">
+<img width="800" alt="img8" src=Imagenes/MotionPro.png>
+</p>
 
 ## Creación y gestión de la clave API para infraestructura clásica :key:
 
