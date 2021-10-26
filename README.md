@@ -42,12 +42,12 @@ Una vez terminados estos dos procesos puede continuar con la instalación y conf
 2. Ejecute MotionProSetup para instalar el software.
 3. Ejecute el asistente de configuración de MotionPro.
 4. A continuación, pulse en el icono de MotionPro del escritorio y seleccione Perfil > Añadir.
-5. Para crear un perfil llene la siguiente informacion:
+5. Para crear un perfil llene la siguiente información:
      * Nombre: Nombre distintivo del perfil
-     * Gateway o Host: Seleccion entre los <a href="https://cloud.ibm.com/docs/iaas-vpn?topic=iaas-vpn-available-vpn-endpoints"> puntos finales de VPN</a> disponibles en *IBM Cloud*
+     * Gateway o Host: Selección entre los <a href="https://cloud.ibm.com/docs/iaas-vpn?topic=iaas-vpn-available-vpn-endpoints"> puntos finales de VPN</a> disponibles en *IBM Cloud*
      * Nombre de usuario: utilice el nombre de usuario que se encuentra en la pestaña de detalles de usuario en la sección ```Contraseña de VPN```
-6. Luego de esto de click sobre el boton guardar.
-7. para efectuar la conexion tenga a mano la contraseña generada anteriormente y de click en el boton ```Login```del perfil.
+6. Luego de esto de click sobre el botón guardar.
+7. para efectuar la conexión tenga a mano la contraseña generada anteriormente y de click en el boton ```Login```del perfil.
 <p align="center">
 <img width="800" alt="img8" src=Imagenes/MotionPro.png>
 </p>
