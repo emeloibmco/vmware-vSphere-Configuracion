@@ -7,7 +7,7 @@
 2. [Configuración de conexión a VPN con SSL desde clientes de MotionPro](#configuración-de-conexión-a-vpn-con-ssl-desde-clientes-de-motionpro)
 3. [Creación y gestión de clave API para infraestructura clásica](#creación-y-gestión-de-la-clave-api-para-infraestructura-clásica-key)
 4. [Despliegue de Baremetal con VMware Solutions](#despliegue-de-baremetal-con-vmware-solutions)
-    * [Opción 1: VCenter appliance] 
+    * [Opción 1: VCenter appliance](#opción-1-vcenter-appliance) 
     * [Opción 2: Virtual server] 
 6. [Referencias](#referencias-)
 7. [Autores](#autores-black_nib)
