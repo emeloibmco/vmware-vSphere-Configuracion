@@ -6,9 +6,11 @@
 1. [Requisitos](#Requisitos-newspaper)
 2. [Configuración de conexión a VPN con SSL desde clientes de MotionPro](#configuración-de-conexión-a-vpn-con-ssl-desde-clientes-de-motionpro)
 3. [Creación y gestión de clave API para infraestructura clásica](#creación-y-gestión-de-la-clave-api-para-infraestructura-clásica-key)
-4. [Despliegue de VMware Solutions Dedicated - VMware vSphere]
-5. [Referencias](#referencias-)
-6. [Autores](#autores-black_nib)
+4. [Despliegue de Baremetal con VMware Solutions]
+    * [Opción 1: VCenter appliance] 
+    * [Opción 2: Virtual server] 
+6. [Referencias](#referencias-)
+7. [Autores](#autores-black_nib)
 
 ## Requisitos: newspaper:
 * Contar con una cuenta en <a href="https://cloud.ibm.com/"> IBM Cloud</a>
@@ -64,6 +66,10 @@ Antes de iniciar el despliegue de la plataforma *VMware vSphere* es necesario cr
 <img width="800" alt="img8" src=Imagenes/API.png>
 </p>
 
+## Despliegue de Baremetal con VMware Solutions
+
+### Opción 1: VCenter appliance
+### Opción 2: Virtual server
 
 
 
