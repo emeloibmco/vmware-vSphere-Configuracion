@@ -61,7 +61,7 @@ Antes de iniciar el despliegue de la plataforma *VMware vSphere* es necesario cr
 
 1. En la consola de IBM Cloud, vaya a ```Gestionar/Manage > Acceso (IAM)/Access (IAM)```, esto lo llevara a una nueva ventana y aquí de click sobre el botón ```Claves API/API keys```.
 2. Esto lo llevara a la ventana de claves API, aqui cambie la vista a claves API de la infraestructura clásica y de click sobre el botón ```Crear una clave de infraestructura clásica/Create classic infrastructure key```.
-3. luego de esto copie y descargue la clave de API en un lugar seguro para poder utilizarla mas adelante.
+3. Luego de esto copie y descargue la clave de API en un lugar seguro para poder utilizarla mas adelante.
 
 <p align="center">
 <img width="800" alt="img8" src=Imagenes/API.png>
@@ -84,17 +84,17 @@ Antes de iniciar con las dos opciones para el proceso de despliegue del vCenter 
       * ```Cluster name```: Ingrese un nombre distintivo para el cluster.
       * ```Licensing```: Seleccione la ultima versión disponible de la licencia, en este caso *vSphere 7.0u2* y seleccione las casillas de ```Include license with purchase```y```VMware vCenter Server > Include license with purchase```.
    * *Bare metal server:*
-      * ```Location```: seleccione la ubicación en la cual quiere que se despliegue el servicio.
-      * ```CPU generation```: seleccione la casilla ```Cascade Lake```.
-      * ```CPU model```: seleccione la configuración que desee.
-      * ```RAM```: seleccione la cantidad de memoria necesaria.
-      * ```Number of bare metal server```: seleccione la cantidad de servidores bare metal que desee desplegar.
+      * ```Location```: Seleccione la ubicación en la cual quiere que se despliegue el servicio.
+      * ```CPU generation```: Seleccione la casilla ```Cascade Lake```.
+      * ```CPU model```: Seleccione la configuración que desee.
+      * ```RAM```: Seleccione la cantidad de memoria necesaria.
+      * ```Number of bare metal server```: Seleccione la cantidad de servidores bare metal que desee desplegar.
    * *Network interface:*
-      * ```Hostname prefix```: ingrese un prefijo distintivo para el hostname.
-      * ```Domain name```: ingrese un nombre distintivo para el dominio, para instancias de vSphere 7.0, el nombre de dominio debe constar de tres o más series separadas por un punto (.) con un máximo de 50 caracteres.
+      * ```Hostname prefix```: Ingrese un prefijo distintivo para el hostname.
+      * ```Domain name```: Ingrese un nombre distintivo para el dominio, para instancias de vSphere 7.0, el nombre de dominio debe constar de tres o más series separadas por un punto (.) con un máximo de 50 caracteres.
       * ```Navigation type```: Seleccione ```Public and private network```.
       * ```Uplink speed```: Seleccione ```10Gb```.
-      * ```VLANs```: seleccione ```Order new VLANs```.
+      * ```VLANs```: Seleccione ```Order new VLANs```.
    * Luego de esto de click en el botón ```Create```.
 
 <p align="center">
