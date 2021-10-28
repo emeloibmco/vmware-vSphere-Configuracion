@@ -140,8 +140,9 @@ Una vez aqui busque el link de descarga con el nombre ```VMware-VCSA-all-6.7.0-1
    * ```Select deployment type```: seleccione ```Embedded Platform Services Controller``` para desplegar el vCenter junto con el Platform Services Controller en la misma maquina.
    * ```Appliance deployment target```:
       * ```ESXi host or vCenter Server name```: ingrese la IP privada del Host creado anteriormente (esta la encuentra en la pestaña overview del servidor de vSphere).
-      * 
-   
+      * ```User name```: ingrese el usuario root del Host.
+      * ```Password```: ingrese la contraseña del usuario root del Host (esta la puede encontrar en la pestaña passwords del servidor de vSphere).
+      * De click en ```Next``` y acepte la advertencia de certificado.
    * ```Set up appliance VM```:
    * ```Select deployment size```:
    * ```Select datastore```:
