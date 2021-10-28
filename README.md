@@ -126,17 +126,30 @@ Para esta primera opción es necesario desplegar una VSI Windows de infraestruct
 <img width="800" alt="img8" src=Imagenes/VSI1.gif>
 </p>
 
-Una vez desplegada la VSI windows de infraestructura clasica se debe desgargar la imagen ISO de vCenter Server Appliance. Para esto primero ejecute la conexion en MotionPro con el perfil de la ubicacion en la cual se encuentran tanto el Hosto como la VSI desplegados (en este caso es Dallas 12), luego de esto ingrese mediante ```Remote Desktop``` a la VSI desplegada anteriormente con la IP (la cual la encuentra en la pestaña de overview) y el usuario y contraseña (Los cuales encuentra en la pestaña de Passwords) una vez aqui ingrese al siguiente link mediante cualquier navegador para descargar la imagen ISO del vCSA, este proceso se realiza en la VSI para ahorrar tiempo y mejorar su eficiencia.
+Luego de esto es necesario crear una subred portable sobre la VLAN privada del Host la cual usaremos después, para esto tenga en cuenta los siguientes pasos:
+1. Desde la lista de recursos en la sección ```Devices```ingrese al servidor de vShpere, una vez aquí diríjase a la sección ```Network details```y de click sobre la IP privada del servidor, esto le permitirá ver todas las subredes disponibles
+2. de click sobre ```All subnets```, esto lo llevara a una nueva ventana, aquí de click sobre ```Create subnet```.
+3. En la pestaña de configuración ingrese la siguiente información:
+   * ```Scope```: Seleccione la misma ubicación en la que se desplego el Host, en este caso es Dallas 12.
+   * ```Network```: Seleccione ```Private```.
+   * ```Version```: Seleccione ```Ipv4```.
+   * ```Size```: Seleccion ```/29```.
+   * ```Routing```: Seleccione ```Portable```.
+   * ```Select VLAN```: Seleccione la VLAN privada del Host.
+   * De click en el botón ```Create```.
+   * Una vez creada guarde la IP de la subred para usarla mas adelante
+
+Una vez desplegada la VSI Windows de infraestructura clásica se debe descargar la imagen ISO de vCenter Server Appliance. Para esto primero ejecute la conexión en MotionPro con el perfil de la ubicación en la cual se encuentran tanto el Host como la VSI desplegados (en este caso es Dallas 12), luego de esto ingrese mediante ```Remote Desktop``` a la VSI desplegada anteriormente con la IP (la cual la encuentra en la pestaña de overview) y el usuario y contraseña (Los cuales encuentra en la pestaña de Passwords) una vez aquí ingrese al siguiente link mediante cualquier navegador para descargar la imagen ISO del vCSA, este proceso se realiza en la VSI para ahorrar tiempo y mejorar su eficiencia.
 ```
 http://downloads.service.softlayer.com/vmware/
 ```
-Una vez aqui busque el link de descarga con el nombre ```VMware-VCSA-all-6.7.0-16046470.iso```y de click sobre este para iniciar el proceso de descarga. Luego de descargar el software tenga en cuenta los sigueintes pasos para desplegarlo sobre la VSI:
+Una vez aquí busque el link de descarga con el nombre ```VMware-VCSA-all-6.7.0-16046470.iso```y de click sobre este para iniciar el proceso de descarga. Luego de descargar el software tenga en cuenta los siguientes pasos para desplegarlo sobre la VSI:
 
 1. Monte la ISO de vCenter Server Appliance (vCSA).
-2. dirijase a la carpeta ```vcsa-ui-installer > win32``` y ejecute el installer.exe.
-3. Esto abrira una la ventana del instalador, aqui de click sobre el boton ```Install``` y tenga en cuenta los siguientes pasos para la isntalacion. 
-   * ```Introduction```: Lea la informacion y de click en ```Next```.
-   * ```End user license agreement```: Lea y acepte los terminos y condiciones y de click en ```next```.
+2. diríjase a la carpeta ```vcsa-ui-installer > win32``` y ejecute el installer.exe.
+3. Esto abrirá una la ventana del instalador, aquí de click sobre el botón ```Install``` y tenga en cuenta los siguientes pasos para la instalación. 
+   * ```Introduction```: Lea la información y de click en ```Next```.
+   * ```End user license agreement```: Lea y acepte los términos y condiciones y de click en ```next```.
    * ```Select deployment type```: seleccione ```Embedded Platform Services Controller``` para desplegar el vCenter junto con el Platform Services Controller en la misma maquina.
    * ```Appliance deployment target```:
       * ```ESXi host or vCenter Server name```: ingrese la IP privada del Host creado anteriormente (esta la encuentra en la pestaña overview del servidor de vSphere).
@@ -144,27 +157,23 @@ Una vez aqui busque el link de descarga con el nombre ```VMware-VCSA-all-6.7.0-1
       * ```Password```: ingrese la contraseña del usuario root del Host (esta la puede encontrar en la pestaña passwords del servidor de vSphere).
       * De click en ```Next``` y acepte la advertencia de certificado.
    * ```Set up appliance VM```:
+      * ```VM name```: Ingrese un nombre distintivo para la maquina.
+      * ```Set root password```: Ingrese la contraseña de root que desee teniendo en cuenta las especificaciones requeridas.
+      * ```Confirm root password```: confirme la contraseña ingresada anteriormente.
+      * De click en ```Next```.
    * ```Select deployment size```:
-   * ```Select datastore```:
+      * ```Deployment size```: Ingrese el tamaño deseado dependiendo de su aplicación, en este caso se utilizo ```Small```.
+      * ```Storage size```: Ingrese el tamaño de almacenamiento dependiendo de su aplicación, en este caso se dejo ```Default```.
+      * De click en ```Next```.
+   * ```Select datastore```: Seleccione la opción ```install on an existing datastore accesible from the target host``` y de click en ```Next```.
    * ```Configure network settings```:
-   * ```Ready to complete stage 1```:
- 
-
-
-Monte la ISO de vCenter Server Appliance (vCSA).
-Abra vcsa-setup.html en un navegador compatible.
-Revise y acepte la instalación del plugin de integración de cliente de VMware.
-Pulse Permitir > Instalar
-Revise y acepte los términos del acuerdo de licencia y pulse Next.
-Especifique el FQDN o la dirección IP privada y el nombre de usuario y la contraseña del host de VMware en el que desea instalar vCSA. Pulse Next.
-Pulse Yes para aceptar el aviso de certificado.
-Especifique un nombre de dispositivo y una contraseña de SO y pulse Next.
-Para el tipo de despliegue, seleccione 'Install vCenter Server with an Embedded Platform Services Controller' y, a continuación, pulse Next.
-Pulse Crear un dominio SSO > Siguiente.
-Elija un tamaño de dispositivo y pulse Next.
-Seleccione un almacén de datos y pulse Next.
-Seleccione 'Use an embedded database (PostgreSQL)' y pulse *Next.
-Defina las configuraciones de red especificando los valores siguientes:
+      * ```Network```: Ingrese el nombre asignado a la subred portable creada anteriormente.
+      * ```IP version```: Ingrese la versión que asigno al momento de crear la subred, en este caso es ```IPv4```
+      * ```IP assignment```: Static.
+      * ```IP address```: Ingrese la IP que desee asignar.
+      * ```Subnet mask or prefix lenght```: Ingrese el prefijo para determinar el tamaño de la subnet.
+      * De click en el boton ```Next```.
+   * ```Ready to complete stage 1```: espere a que se termine el primer stage de la instalación.
 
 
 ### Opción 2: Virtual server instance
