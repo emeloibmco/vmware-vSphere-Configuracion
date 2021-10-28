@@ -104,6 +104,9 @@ Antes de iniciar con las dos opciones para el proceso de despliegue del vCenter 
 Luego de tener desplegado el Host de vSphere con recursos suficientes se puede pasar al despliegue vCenter. Este se puede realizar mediante dos opciones, la primera es desplegando y configurando una imagen ISO de vCenter Server Appliance en una VSI de infraestructura clásica de Windows y la segunda opción es desplegar el software de vCenter al momento de crear y configurar la VSI de infraestructura clásica de Windows en la misma VLAN de Host. Ambas opciones se explicarán a continuación.
 
 ### Opción 1: VCenter appliance
+
+#### Requisitos previos
+
 Para esta primera opción es necesario desplegar una VSI Windows de infraestructura clásica, para hacer esto tenga en cuenta los siguientes pasos:
 1.  Desde la consola de *IBM Cloud* diríjase al catalogo de productos, una vez aquí busque ```Virtual Server for Classic```.
 2.  Esto lo llevara a una ventana de configuración, aquí ingrese la siguiente información:
@@ -138,6 +141,9 @@ Luego de esto es necesario crear una subred portable sobre la VLAN privada del H
    * ```Select VLAN```: Seleccione la VLAN privada del Host.
    * De click en el botón ```Create```.
    * Una vez creada guarde la IP de la subred para usarla mas adelante
+  
+
+#### Despliegue y configuración de vCenter Server Appliance
 
 Una vez desplegada la VSI Windows de infraestructura clásica se debe descargar la imagen ISO de vCenter Server Appliance. Para esto primero ejecute la conexión en MotionPro con el perfil de la ubicación en la cual se encuentran tanto el Host como la VSI desplegados (en este caso es Dallas 12), luego de esto ingrese mediante ```Remote Desktop``` a la VSI desplegada anteriormente con la IP (la cual la encuentra en la pestaña de overview) y el usuario y contraseña (Los cuales encuentra en la pestaña de Passwords) una vez aquí ingrese al siguiente link mediante cualquier navegador para descargar la imagen ISO del vCSA, este proceso se realiza en la VSI para ahorrar tiempo y mejorar su eficiencia.
 ```
