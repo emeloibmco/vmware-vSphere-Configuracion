@@ -111,16 +111,16 @@ Para esta primera opción es necesario desplegar una VSI Windows de infraestruct
    * ```Hostname```: Ingrese un nombre distintivo.
    * ```Quantity```: seleccione 1
    * ```Biling method```: En este caso puede seleccionar cualquiera de las dos opciones dependiendo de sus preferencias.
-   * ```Location```: Seleccione la ubicación en la cual desee desplegar la VSI
-   * ```Profile```: Seleccione la configuración de perfil que desee, en este caso se utilizo ```B1.4x16```
+   * ```Location```: Seleccione la ubicación en la cual desee desplegar la VSI.
+   * ```Profile```: Seleccione la configuración de perfil que desee, en este caso se utilizo ```B1.4x16```.
    * *Operating system:*
-      * ```Vendor```: seleccione ```Microsoft```
-      * ```Version```: Seleccione la versión que desee en este caso se utilizo ```2016 Standard 864bit9 - HVM``` 
+      * ```Vendor```: seleccione ```Microsoft```.
+      * ```Version```: Seleccione la versión que desee en este caso se utilizo ```2016 Standard 864bit9 - HVM``` .
       *  ```Attached storage disks```: De click en el botón ```Add new``` y seleccione un disco adicional de 100GB.
    *  *Network interface*
-      *  ```Uplink port speeds```: Seleccione ```1 Gbps non rate-limited private network uplinks```
-      *  ```Private VLAN```: Seleccione la misma VLAN en la que esta ubicado el Host. Para ver esta información diríjase a la lista de recursos y en la pestaña de ```Devices```encontrara el Host creado anteriormente de click sobre el nombre, esto lo llevara a la pestaña de ```overview```, en esta pestaña en la sección de ```Network details```encontrara las VLANs asociadas a cada interfaz.
-   *  Luego de completar esta información de click sobre el botón ```Crear```
+      *  ```Uplink port speeds```: Seleccione ```1 Gbps non rate-limited private network uplinks```.
+      *  ```Private VLAN```: Seleccione la misma VLAN en la que esta ubicado el Host. Para ver esta información diríjase a la lista de recursos y en la pestaña de ```Devices```encontrara el Host creado anteriormente de click sobre el nombre, esto lo llevara a la pestaña de ```overview```, en esta pestaña en la sección de ```Network details``` encontrara las VLANs asociadas a cada interfaz.
+   *  Luego de completar esta información de click sobre el botón ```Crear```.
 
 <p align="center">
 <img width="800" alt="img8" src=Imagenes/VSI1.gif>
