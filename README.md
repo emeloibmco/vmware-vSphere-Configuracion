@@ -93,6 +93,10 @@ Antes de iniciar con las dos opciones para el proceso de despliegue del vCenter 
       * ```VLANs```: seleccione ```Order new VLANs```.
    * Luego de esto de click en el botón ```Create```.
 
+<p align="center">
+<img width="800" alt="img8" src=Imagenes/Host.gif>
+</p>
+
 ### Opción 1: VCenter appliance
 ### Opción 2: Virtual server
 
