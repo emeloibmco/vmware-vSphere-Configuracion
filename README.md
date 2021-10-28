@@ -88,7 +88,7 @@ Antes de iniciar con las dos opciones para el proceso de despliegue del vCenter 
       * ```CPU generation```: seleccione la casilla ```Cascade Lake```.
       * ```CPU model```: seleccione la configuración que desee.
       * ```RAM```: seleccione la cantidad de memoria necesaria.
-      * ```Number of bare metal server```: seleccione la cantidad de bare metal que desee.
+      * ```Number of bare metal server```: seleccione la cantidad de servidores bare metal que desee desplegar.
    * *Network interface:*
       * ```Hostname prefix```: ingrese un prefijo distintivo para el hostname.
       * ```Domain name```: ingrese un nombre distintivo para el dominio, para instancias de vSphere 7.0, el nombre de dominio debe constar de tres o más series separadas por un punto (.) con un máximo de 50 caracteres.
