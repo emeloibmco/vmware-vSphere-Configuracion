@@ -6,7 +6,7 @@
 1. [Requisitos](#Requisitos-newspaper)
 2. [Configuración de conexión a VPN con SSL desde clientes de MotionPro](#configuración-de-conexión-a-vpn-con-ssl-desde-clientes-de-motionpro)
 3. [Creación y gestión de clave API para infraestructura clásica](#creación-y-gestión-de-la-clave-api-para-infraestructura-clásica-key)
-4. [Despliegue de Baremetal con VMware Solutions](#despliegue-de-baremetal-con-vmware-solutions)
+4. [Despliegue de Baremetal con VMware Solutions vCenter server](#despliegue-de-baremetal-con-vmware-solutions-VCenter-server)
     * [Opción 1: VCenter appliance](#opción-1-vcenter-appliance) 
     * [Opción 2: Virtual server](#opción-2-virtual-server) 
 6. [Referencias](#referencias-)
@@ -67,7 +67,31 @@ Antes de iniciar el despliegue de la plataforma *VMware vSphere* es necesario cr
 <img width="800" alt="img8" src=Imagenes/API.png>
 </p>
 
-## Despliegue de Baremetal con VMware Solutions
+## Despliegue de Baremetal con VMware Solutions vCenter server
+
+Antes de iniciar con las dos opciones para el proceso de despliegue del vCenter server es necesario crear el Host de vSphere con recursos suficientes para dar soporte al VMware vCenter server Appliance, para esto tenga en cuenta los siguientes pasos:
+
+1. Desde la consola de *IBM Cloud* diríjase al catalogo de productos, una vez aquí busque el botón de ```VMware solutions```.
+2. Esto lo llevara a una nueva ventana, aquí de click sobre ```VMware Solutions Dedicated```, esto lo llevara a la ventana de configuración del servicio de VMware Solutions Dedicated, aquí debe ingresar la siguiente información:
+   * ```Before you begin```: Tenga en cuenta la información especificada en esta sección, aquí debe ingresar el nombre de usuario y la clave API obtenidos en el numeral 3 de este repositorio. 
+   * ```Solutions types```: Seleccione VMare vSphere, luego de esto confirme que la casilla ```Create new``` esta marcada
+   * ```Cluster configurations```: (New cluster).
+   * *Licensing:*
+      * ```Cluster name```: Ingrese un nombre distintivo para el cluster.
+      * ```Licensing```: Seleccione la ultima versión disponible de la licencia, en este caso *vSphere 7.0u2* y seleccione las casillas de ```Include license with purchase```y```VMware vCenter Server > Include license with purchase```.
+   * *Bare metal server: *
+      * ```Location```: seleccione la ubicación en la cual quiere que se despliegue el servicio.
+      * ```CPU generation```: seleccione la casilla ```Cascade Lake```.
+      * ```CPU model```: seleccione la configuración que desee.
+      * ```RAM```: seleccione la cantidad de memoria necesaria.
+      * ```Number of bare metal server```: seleccione la cantidad de bare metal que desee.
+   * *Network interface: *
+      * ```Hostname prefix```: ingrese un prefijo distintivo para el hostname.
+      * ```Domain name```: ingrese un nombre distintivo para el dominio, para instancias de vSphere 7.0, el nombre de dominio debe constar de tres o más series separadas por un punto (.) con un máximo de 50 caracteres.
+      * ```Navigation type```: Seleccione ```Public and private network```.
+      * ```Uplink speed```: Seleccione ```10Gb```.
+      * ```VLANs```: seleccione ```Order new VLANs```.
+   * Luego de esto de click en el botón ```Create```.
 
 ### Opción 1: VCenter appliance
 ### Opción 2: Virtual server
