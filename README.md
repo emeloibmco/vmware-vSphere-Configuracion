@@ -141,7 +141,10 @@ Luego de esto es necesario crear una subred portable sobre la VLAN privada del H
    * ```Select VLAN```: Seleccione la VLAN privada del Host.
    * De click en el botón ```Create```.
    * Una vez creada guarde la IP de la subred para usarla mas adelante
-  
+
+<p align="center">
+<img width="800" alt="img8" src=Imagenes/SN.gif>
+</p>
 
 #### Despliegue y configuración de vCenter Server Appliance
 
