@@ -79,13 +79,13 @@ Antes de iniciar con las dos opciones para el proceso de despliegue del vCenter 
    * *Licensing:*
       * ```Cluster name```: Ingrese un nombre distintivo para el cluster.
       * ```Licensing```: Seleccione la ultima versión disponible de la licencia, en este caso *vSphere 7.0u2* y seleccione las casillas de ```Include license with purchase```y```VMware vCenter Server > Include license with purchase```.
-   * *Bare metal server: *
+   * *Bare metal server:*
       * ```Location```: seleccione la ubicación en la cual quiere que se despliegue el servicio.
       * ```CPU generation```: seleccione la casilla ```Cascade Lake```.
       * ```CPU model```: seleccione la configuración que desee.
       * ```RAM```: seleccione la cantidad de memoria necesaria.
       * ```Number of bare metal server```: seleccione la cantidad de bare metal que desee.
-   * *Network interface: *
+   * *Network interface:*
       * ```Hostname prefix```: ingrese un prefijo distintivo para el hostname.
       * ```Domain name```: ingrese un nombre distintivo para el dominio, para instancias de vSphere 7.0, el nombre de dominio debe constar de tres o más series separadas por un punto (.) con un máximo de 50 caracteres.
       * ```Navigation type```: Seleccione ```Public and private network```.
