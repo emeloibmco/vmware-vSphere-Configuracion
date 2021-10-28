@@ -74,9 +74,10 @@ Antes de iniciar con las dos opciones para el proceso de despliegue del vCenter 
 1. Desde la consola de *IBM Cloud* diríjase al catalogo de productos, una vez aquí busque el botón de ```VMware solutions```.
 2. Esto lo llevara a una nueva ventana, aquí de click sobre ```VMware Solutions Dedicated```, esto lo llevara a la ventana de configuración del servicio de VMware Solutions Dedicated, aquí debe ingresar la siguiente información:
    * ```Before you begin```: Tenga en cuenta la información especificada en esta sección, aquí debe ingresar el nombre de usuario y la clave API obtenidos en el numeral 3 de este repositorio. 
-   <p align="center">
-<img width="800" alt="img8" src=Imagenes/Before.png>
-</p>
+         <p align="center">
+      <img width="800" alt="img8" src=Imagenes/Before.png>
+      </p>
+
    * ```Solutions types```: Seleccione VMare vSphere, luego de esto confirme que la casilla ```Create new``` esta marcada
    * ```Cluster configurations```: (New cluster).
    * *Licensing:*
