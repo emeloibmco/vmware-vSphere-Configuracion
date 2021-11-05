@@ -84,7 +84,7 @@ Antes de iniciar con la primera opcion para el proceso de despliegue del vCenter
    * ```Cluster configurations```: (New cluster).
    * *Licensing:*
       * ```Cluster name```: Ingrese un nombre distintivo para el cluster.
-      * ```Licensing```: Seleccione la versión de la licencia que desee, tenga en cuenta que esta no puede ser superior a la version mas reciente de la <a href=""> imagen</a> ISO del vCSA en este caso se selecciona *vSphere 6.7u3* dado que la ultima version disponible de la imagen es *VMware-VCSA-all-6.7.0-16046470.iso*, luego de esto seleccione las casillas de ```Include license with purchase```y```VMware vCenter Server > Include license with purchase```.
+      * ```Licensing```: Seleccione la versión de la licencia que desee, tenga en cuenta que esta no puede ser superior a la version mas reciente de la <a href="https://github.com/emeloibmco/vmware-vSphere-Configuracion/blob/main/README.md#despliegue-y-configuración-de-vcenter-server-appliance"> imagen</a> ISO del vCSA en este caso se selecciona *vSphere 6.7u3* dado que la ultima version disponible de la imagen es *VMware-VCSA-all-6.7.0-16046470.iso*, luego de esto seleccione las casillas de ```Include license with purchase```y```VMware vCenter Server > Include license with purchase```.
    * *Bare metal server:*
       * ```Location```: Seleccione la ubicación en la cual quiere que se despliegue el servicio.
       * ```CPU generation```: Seleccione la casilla ```Cascade Lake```.
@@ -93,7 +93,7 @@ Antes de iniciar con la primera opcion para el proceso de despliegue del vCenter
       * ```Number of bare metal server```: Seleccione la cantidad de servidores bare metal que desee desplegar.
    * *Network interface:*
       * ```Hostname prefix```: Ingrese un prefijo distintivo para el hostname.
-      * ```Domain name```: Ingrese un nombre distintivo para el dominio, para instancias de vSphere 7.0, el nombre de dominio debe constar de tres o más series separadas por un punto (.) con un máximo de 50 caracteres.
+      * ```Domain name```: Ingrese un nombre distintivo para el dominio, para instancias de vSphere 6.7, el nombre de dominio debe constar de tres o más series separadas por un punto (.) con un máximo de 50 caracteres. 
       * ```Navigation type```: Seleccione ```Public and private network```.
       * ```Uplink speed```: Seleccione ```10Gb```.
       * ```VLANs```: Seleccione ```Order new VLANs```.
