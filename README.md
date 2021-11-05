@@ -187,6 +187,10 @@ Una vez aquí busque el link de descarga con el nombre ```VMware-VCSA-all-6.7.0-
       * ```Subnet mask or prefix lenght```: Ingrese el prefijo para determinar el tamaño de la subnet.
       * De click en el boton ```Next```.
    * ```Ready to complete stage 1```: espere a que se termine el primer stage de la instalación.
+   
+<p align="center">
+<img width="800" alt="img8" src=Imagenes/ST1.gif>
+</p>
 
 
 ### Opción 2: Virtual server instance
