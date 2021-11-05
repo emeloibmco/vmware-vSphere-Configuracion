@@ -69,7 +69,9 @@ Antes de iniciar el despliegue de la plataforma *VMware vSphere* es necesario cr
 
 ## Despliegue de Baremetal con VMware Solutions vCenter server
 
-Antes de iniciar con las dos opciones para el proceso de despliegue del vCenter server es necesario crear el Host de vSphere con recursos suficientes para dar soporte al VMware vCenter server Appliance, para esto tenga en cuenta los siguientes pasos:
+### Opción 1: VCenter appliance
+
+Antes de iniciar con la primera opcion para el proceso de despliegue del vCenter server es necesario crear el Host de vSphere con recursos suficientes para dar soporte al VMware vCenter server Appliance, para esto tenga en cuenta los siguientes pasos:
 
 1. Desde la consola de *IBM Cloud* diríjase al catalogo de productos, una vez aquí busque  ```VMware solutions```.
 2. Esto lo llevara a una nueva ventana, aquí de click sobre ```VMware Solutions Dedicated```, esto lo llevara a la ventana de configuración del servicio de VMware Solutions Dedicated, aquí debe ingresar la siguiente información:
@@ -82,7 +84,7 @@ Antes de iniciar con las dos opciones para el proceso de despliegue del vCenter 
    * ```Cluster configurations```: (New cluster).
    * *Licensing:*
       * ```Cluster name```: Ingrese un nombre distintivo para el cluster.
-      * ```Licensing```: Seleccione la ultima versión disponible de la licencia, en este caso *vSphere 7.0u2* y seleccione las casillas de ```Include license with purchase```y```VMware vCenter Server > Include license with purchase```.
+      * ```Licensing```: Seleccione la versión de la licencia que desee, tenga en cuenta que esta no puede ser superior a la version mas reciente de la <a href=""> imagen</a> ISO del vCSA en este caso se selecciona *vSphere 6.7u3* dado que la ultima version disponible de la imagen es *VMware-VCSA-all-6.7.0-16046470.iso*, luego de esto seleccione las casillas de ```Include license with purchase```y```VMware vCenter Server > Include license with purchase```.
    * *Bare metal server:*
       * ```Location```: Seleccione la ubicación en la cual quiere que se despliegue el servicio.
       * ```CPU generation```: Seleccione la casilla ```Cascade Lake```.
@@ -103,11 +105,11 @@ Antes de iniciar con las dos opciones para el proceso de despliegue del vCenter 
 
 Luego de tener desplegado el Host de vSphere con recursos suficientes se puede pasar al despliegue vCenter. Este se puede realizar mediante dos opciones, la primera es desplegando y configurando una imagen ISO de vCenter Server Appliance en una VSI de infraestructura clásica de Windows y la segunda opción es desplegar el software de vCenter al momento de crear y configurar la VSI de infraestructura clásica de Windows en la misma VLAN de Host. Ambas opciones se explicarán a continuación.
 
-### Opción 1: VCenter appliance
+
 
 #### Requisitos previos
 
-Para esta primera opción es necesario desplegar una VSI Windows de infraestructura clásica, para hacer esto tenga en cuenta los siguientes pasos:
+Adicionalmente, Para esta primera opción es necesario desplegar una VSI Windows de infraestructura clásica, para hacer esto tenga en cuenta los siguientes pasos:
 1.  Desde la consola de *IBM Cloud* diríjase al catalogo de productos, una vez aquí busque ```Virtual Server for Classic```.
 2.  Esto lo llevara a una ventana de configuración, aquí ingrese la siguiente información:
    * ```Type of virtual server```: seleccione ```Public```.
