@@ -78,7 +78,7 @@ Antes de iniciar el despliegue de la plataforma *VMware vSphere* es necesario cr
 Antes de iniciar con la primera opcion para el proceso de despliegue del vCenter server es necesario crear el Host de vSphere con recursos suficientes para dar soporte al VMware vCenter server Appliance, para esto tenga en cuenta los siguientes pasos:
 
 1. Desde la consola de *IBM Cloud* diríjase al catalogo de productos, una vez aquí busque  ```VMware solutions```.
-2. Esto lo llevara a una nueva ventana, aquí de click sobre ```VMware Solutions Dedicated```, esto lo llevara a la ventana de configuración del servicio de VMware Solutions Dedicated, aquí debe ingresar la siguiente información:
+2. En esta nueva ventana de click sobre ```VMware Solutions Dedicated```, esto lo llevara a la ventana de configuración del servicio de VMware Solutions Dedicated, aquí debe ingresar la siguiente información:
    * ```Before you begin```: Tenga en cuenta la información especificada en esta sección, aquí debe ingresar el nombre de usuario y la clave API obtenidos en el numeral <a href="https://github.com/emeloibmco/vmware-vSphere-Configuracion/blob/main/README.md#creación-y-gestión-de-la-clave-api-para-infraestructura-clásica-key"> 3</a> de este repositorio. 
          <p align="center">
       <img width="800" alt="img8" src=Imagenes/Before.png>
@@ -90,7 +90,7 @@ Antes de iniciar con la primera opcion para el proceso de despliegue del vCenter
       * ```Cluster name```: Ingrese un nombre distintivo para el cluster.
       * ```Licensing```: Seleccione la versión de la licencia que desee, tenga en cuenta que esta no puede ser superior a la version mas reciente de la <a href="https://github.com/emeloibmco/vmware-vSphere-Configuracion/blob/main/README.md#despliegue-y-configuración-de-vcenter-server-appliance"> imagen</a> ISO del vCSA en este caso se selecciona **vSphere 6.7u3** dado que la ultima version disponible de la imagen es **VMware-VCSA-all-6.7.0-16046470.iso**, luego de esto seleccione las casillas de ```Include license with purchase```y```VMware vCenter Server > Include license with purchase```.
    * *Bare metal server:*
-      * ```Location```: Seleccione la ubicación en la cual quiere que se despliegue el servicio.
+      * ```Location```: Seleccione la ubicación en la cual quiere que se despliegue el servicio, en este caso se utilizo Dallas 12.
       * ```CPU generation```: Seleccione la casilla ```Cascade Lake```.
       * ```CPU model```: Seleccione la configuración que desee.
       * ```RAM```: Seleccione la cantidad de memoria necesaria.
@@ -107,7 +107,7 @@ Antes de iniciar con la primera opcion para el proceso de despliegue del vCenter
 <img width="800" alt="img8" src=Imagenes/Host.gif>
 </p>
 
-Luego de tener desplegado el Host de vSphere con recursos suficientes se puede pasar al despliegue vCenter. Este se puede realizar mediante dos opciones, la primera es desplegando y configurando una imagen ISO de vCenter Server Appliance en una VSI de infraestructura clásica de Windows y la segunda opción es desplegar el software de vCenter al momento de crear y configurar la VSI de infraestructura clásica de Windows en la misma VLAN de Host. Ambas opciones se explicarán a continuación.
+
 
 
 Adicionalmente, Para esta primera opción es necesario desplegar una VSI Windows de infraestructura clásica, para hacer esto tenga en cuenta los siguientes pasos:
@@ -117,7 +117,7 @@ Adicionalmente, Para esta primera opción es necesario desplegar una VSI Windows
    * ```Hostname```: Ingrese un nombre distintivo.
    * ```Quantity```: seleccione 1
    * ```Biling method```: En este caso puede seleccionar cualquiera de las dos opciones dependiendo de sus preferencias.
-   * ```Location```: Seleccione la ubicación en la cual desee desplegar la VSI.
+   * ```Location```: Seleccione la ubicación en la cual desee desplegar la VSI, en este caso se utilizo Dallas 12.
    * ```Profile```: Seleccione la configuración de perfil que desee, en este caso se utilizo ```B1.4x16```.
    * *Operating system:*
       * ```Vendor```: seleccione ```Microsoft```.
@@ -160,6 +160,7 @@ Una vez aquí busque el link de descarga con el nombre ```VMware-VCSA-all-6.7.0-
 1. Monte la ISO de vCenter Server Appliance (vCSA).
 2. diríjase a la carpeta ```vcsa-ui-installer > win32``` y ejecute el installer.exe.
 3. Esto abrirá una la ventana del instalador, aquí de click sobre el botón ```Install``` y tenga en cuenta los siguientes pasos para la instalación. 
+   * **STAGE 1**
    * ```Introduction```: Lea la información y de click en ```Next```.
    * ```End user license agreement```: Lea y acepte los términos y condiciones y de click en ```next```.
    * ```Select deployment type```: seleccione ```Embedded Platform Services Controller``` para desplegar el vCenter junto con el Platform Services Controller en la misma maquina.
