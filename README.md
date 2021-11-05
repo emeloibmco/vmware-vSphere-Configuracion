@@ -71,6 +71,10 @@ Antes de iniciar el despliegue de la plataforma *VMware vSphere* es necesario cr
 
 ### Opción 1: VCenter appliance
 
+
+#### Requisitos previos
+
+
 Antes de iniciar con la primera opcion para el proceso de despliegue del vCenter server es necesario crear el Host de vSphere con recursos suficientes para dar soporte al VMware vCenter server Appliance, para esto tenga en cuenta los siguientes pasos:
 
 1. Desde la consola de *IBM Cloud* diríjase al catalogo de productos, una vez aquí busque  ```VMware solutions```.
@@ -105,9 +109,6 @@ Antes de iniciar con la primera opcion para el proceso de despliegue del vCenter
 
 Luego de tener desplegado el Host de vSphere con recursos suficientes se puede pasar al despliegue vCenter. Este se puede realizar mediante dos opciones, la primera es desplegando y configurando una imagen ISO de vCenter Server Appliance en una VSI de infraestructura clásica de Windows y la segunda opción es desplegar el software de vCenter al momento de crear y configurar la VSI de infraestructura clásica de Windows en la misma VLAN de Host. Ambas opciones se explicarán a continuación.
 
-
-
-#### Requisitos previos
 
 Adicionalmente, Para esta primera opción es necesario desplegar una VSI Windows de infraestructura clásica, para hacer esto tenga en cuenta los siguientes pasos:
 1.  Desde la consola de *IBM Cloud* diríjase al catalogo de productos, una vez aquí busque ```Virtual Server for Classic```.
