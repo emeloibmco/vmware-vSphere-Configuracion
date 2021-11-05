@@ -194,6 +194,10 @@ Una vez aquí busque el link de descarga con el nombre ```VMware-VCSA-all-6.7.0-
 
    * **STAGE 2**
    * Luego de terminar la configuracion del Stage 1 se abrira de manera automatica el Stage 2, en caso de que esto no suceda siga las instrucciones de la ventana emergente para acceder a la congfiguracion del stage 2 como se muestra en la siguiente imagen.
+   <p align="center">
+<img width="800" alt="img8" src=Imagenes/Error ST1.png>
+</p>
+
 
 ### Opción 2: Virtual server instance
 
