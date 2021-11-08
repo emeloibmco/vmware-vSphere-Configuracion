@@ -198,6 +198,18 @@ Una vez aquí busque el link de descarga con el nombre ```VMware-VCSA-all-6.7.0-
 <img width="800" alt="img8" src=Imagenes/Error.png>
 </p>
 
+   * Una vez se encuentre en la pestaña de configuracion del stage 2 tenga en cuenta los sigueintes pasos.
+   * Ingrese el usuario y contraseña que le asigno al vCenter Server Appliance anteriormente
+   * ```Introduction```: Lea la información y de click en ```Next```.
+   * ```Appliance configuration```: Lea la configuracion y asegurese que todos los datos esten correctos, luego de click en ```Next```.
+   * ```SSO Configuration```
+      * ```Single Sign-On domain name```: Ingrese un nombre distintivo para el dominio del SSO.
+      * ```Single Sign-On password```: Ingrese una contraseña teniendo en cuenta las especificaciones requeridas.
+      * De click en ```Next```.
+   * ```Configure CEIP```: Lea la informacion, si esta de acuerdo seleccione la casilla de ```Join the VMware's Customer Experience Improvement Program (CEIP)``` y de click en ```Next```.
+   * ```Ready to Complete```: Verifique la informacion y de click en ```Finish```.
+   * Espere a que termine la instalacion del segundo Stage.
+
 
 ### Opción 2: Virtual server instance
 
