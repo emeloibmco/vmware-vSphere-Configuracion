@@ -210,6 +210,10 @@ Una vez aquí busque el link de descarga con el nombre ```VMware-VCSA-all-6.7.0-
    * ```Ready to Complete```: Verifique la informacion y de click en ```Finish```.
    * Espere a que termine la instalacion del segundo Stage.
 
+<p align="center">
+<img width="800" alt="img8" src=Imagenes/ST2.gif>
+</p>
+
 
 ### Opción 2: Virtual server instance
 
