@@ -69,13 +69,7 @@ Antes de iniciar el despliegue de la plataforma *VMware vSphere* es necesario cr
 
 ## Despliegue de Baremetal con VMware Solutions vCenter server
 
-### Opción 1: VCenter appliance
-
-
-#### Requisitos previos
-
-
-Antes de iniciar con la primera opcion para el proceso de despliegue del vCenter server es necesario crear el Host de vSphere con recursos suficientes para dar soporte al VMware vCenter server Appliance, para esto tenga en cuenta los siguientes pasos:
+Antes de iniciar con el despliegue vCenter Server Appliance mediante cualquiera de las dos opciones es necesario crear el Host de vSphere con recursos suficientes para dar soporte al VMware vCenter server Appliance, para esto tenga en cuenta los siguientes pasos:
 
 1. Desde la consola de *IBM Cloud* diríjase al catalogo de productos, una vez aquí busque  ```VMware solutions```.
 2. En esta nueva ventana de click sobre ```VMware Solutions Dedicated```, esto lo llevara a la ventana de configuración del servicio de VMware Solutions Dedicated, aquí debe ingresar la siguiente información:
@@ -107,10 +101,13 @@ Antes de iniciar con la primera opcion para el proceso de despliegue del vCenter
 <img width="800" alt="img8" src=Imagenes/Host.gif>
 </p>
 
+Luego de tener desplegado el Host de vSphere con recursos suficientes se puede pasar al despliegue vCenter. Este se puede realizar mediante dos opciones, la primera es desplegando y configurando una imagen ISO de vCenter Server Appliance en una VSI de infraestructura clásica de Windows y la segunda opción es desplegar el software de vCenter al momento de crear y configurar la VSI de infraestructura clásica de Windows en la misma VLAN de Host. Ambas opciones se explicarán a continuación.
 
+### Opción 1: VCenter appliance
 
+#### Requisitos previos
 
-Adicionalmente, Para esta primera opción es necesario desplegar una VSI Windows de infraestructura clásica, para hacer esto tenga en cuenta los siguientes pasos:
+Para esta primera opción es necesario desplegar una VSI Windows de infraestructura clásica, para hacer esto tenga en cuenta los siguientes pasos:
 1.  Desde la consola de *IBM Cloud* diríjase al catalogo de productos, una vez aquí busque ```Virtual Server for Classic```.
 2.  Esto lo llevara a una ventana de configuración, aquí ingrese la siguiente información:
    * ```Type of virtual server```: seleccione ```Public```.
@@ -122,7 +119,7 @@ Adicionalmente, Para esta primera opción es necesario desplegar una VSI Windows
    * *Operating system:*
       * ```Vendor```: seleccione ```Microsoft```.
       * ```Version```: Seleccione la versión que desee en este caso se utilizo ```2016 Standard 864bit9 - HVM``` .
-      *  ```Attached storage disks```: De click en el botón ```Add new``` y seleccione un disco adicional de 100GB.
+   *  ```Attached storage disks```: De click en el botón ```Add new``` y seleccione un disco adicional de 100GB.
    *  *Network interface*
       *  ```Uplink port speeds```: Seleccione ```1 Gbps non rate-limited private network uplinks```.
       *  ```Private VLAN```: Seleccione la misma VLAN en la que esta ubicado el Host. Para ver esta información diríjase a la lista de recursos y en la pestaña de ```Devices```encontrara el Host creado anteriormente de click sobre el nombre, esto lo llevara a la pestaña de ```overview```, en esta pestaña en la sección de ```Network details``` encontrara las VLANs asociadas a cada interfaz.
@@ -216,6 +213,26 @@ Una vez aquí busque el link de descarga con el nombre ```VMware-VCSA-all-6.7.0-
 
 
 ### Opción 2: Virtual server instance
+
+Para esta segunda opción es necesario desplegar una VSI Windows de infraestructura clásica en la misma VLAN del Host creado anteriormente para poder desplegar el software de vCenter en esta maquina virtual, para esto tenga en cuenta los siguientes pasos:
+
+1.  Desde la consola de *IBM Cloud* diríjase al catalogo de productos, una vez aquí busque ```Virtual Server for Classic```.
+2.  Esto lo llevara a una ventana de configuración, aquí ingrese la siguiente información:
+   * ```Type of virtual server```: seleccione ```Public```.
+   * ```Hostname```: Ingrese un nombre distintivo.
+   * ```Quantity```: seleccione 1
+   * ```Biling method```: Seleccione ```Monthly```.
+   * ```Location```: Seleccione la ubicación en la cual desee desplegar la VSI, en este caso se utilizo Dallas 12.
+   * ```Profile```: Seleccione la configuración de perfil que desee, en este caso se utilizo ```B1.4x16```.
+   * *Operating system:*
+      * ```Vendor```: seleccione ```Microsoft```.
+      * ```Version```: Seleccione  ```2016 Standard 864bit9 - HVM``` .
+      * ```OS add-on```: Seleccione ```VMware``` > ```vCenter 6.7```.
+   *  ```Attached storage disks```: De click en el botón ```Add new``` y seleccione un disco adicional de 100GB.
+   *  *Network interface*
+      *  ```Uplink port speeds```: Seleccione ```1 Gbps non rate-limited private network uplinks```.
+      *  ```Private VLAN```: Seleccione la misma VLAN en la que esta ubicado el Host. Para ver esta información diríjase a la lista de recursos y en la pestaña de ```Devices```encontrara el Host creado anteriormente de click sobre el nombre, esto lo llevara a la pestaña de ```overview```, en esta pestaña en la sección de ```Network details``` encontrara las VLANs asociadas a cada interfaz.
+   *  Luego de completar esta información de click sobre el botón ```Crear```.
 
 
 
