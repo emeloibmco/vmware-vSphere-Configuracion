@@ -9,7 +9,7 @@
 4. [Despliegue de Baremetal con VMware Solutions vCenter server](#despliegue-de-baremetal-con-vmware-solutions-VCenter-server)
     * [Opción 1: VCenter appliance](#opción-1-vcenter-appliance) 
     * [Opción 2: Virtual server](#opción-2-virtual-server) 
-5. [Configuración vCenter Server]
+5. [Configuración vCenter Server](#configuración-vcenter-server)
 6. [Referencias](#referencias-)
 7. [Autores](#autores-black_nib)
 
