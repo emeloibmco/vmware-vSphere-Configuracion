@@ -268,7 +268,9 @@ Una vez desplegado el vCenter Server Appliance se puede pasar a la configuració
    * **Lockdown mode**: Lea la informacion, seleccionde ```Disabled``` y de click en ```Next```.
    * **Ready to complete**: Lea la informacion y de click en ```Finish```.
 
-
+<p align="center">
+<img width="800" alt="img8" src=Imagenes/addHost.gif>
+</p>
 
 
 
