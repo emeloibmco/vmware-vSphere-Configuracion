@@ -256,6 +256,17 @@ Una vez desplegado el vCenter Server Appliance se puede pasar a la configuració
    * De click izquierdo sobre el nombre del Datacenter creado anteriormente, luego de esto de click sobre ```New Cluster```.
    * Ingrese un nombre distintivo para el cluster y de click en ```OK```.
 
+4. Agregue un Host, para esto tenga en cuenta los siguientes pasos:
+   * De click izquierdo sobre el nombre del Datacenter creado anteriormente, luego de esto de click sobre ```Add Host```.
+   * **Name and Location**
+      * ```Host name or IP adress```: Copie y pegue la IP privada del Host de vSphere creado anteriormente.
+   * **Connection settings**
+   * ```User name```: Ingrese el usuario root del Host de vSphere.
+   * ```Password```: Ingrese la contraseña del usuario root del Host de vSphere.
+   * **Host summary**: Lea la informacion y de click en ```Next```.
+   * **Assign license**: Lea la informacion y de click en ```Next```.
+   * **Lockdown mode**: Lea la informacion, seleccionde ```Disabled``` y de click en ```Next```.
+   * **Ready to complete**: Lea la informacion y de click en ```Finish```.
 
 
 
