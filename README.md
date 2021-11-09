@@ -20,7 +20,7 @@
 
 ## Configuración de conexión a VPN con SSL desde clientes de MotionPro.
 Antes de iniciar con la descarga y configuración del software MotionPro es necesario habilitar el acceso VPN con SSL en su cuenta de *IBM Cloud*, para esto tenga en cuenta los siguientes pasos:
-1. Desde la consola de *IBM Cloud* vaya a ```Gestionar/Manage > Acceso (IAM)/Access (IAM)```, esto lo llevara a una nueva ventana, alli de click sobre el botón ```Usuarios/Users```.
+1. Desde la consola de *IBM Cloud* vaya a ```Gestionar/Manage > Acceso (IAM)/Access (IAM)```, esto lo llevara a una nueva ventana, allí de click sobre el botón ```Usuarios/Users```.
 2. Seleccione el nombre del usuario al cual desea asignarle acceso VPN con SSL.
 3. En la pagina principal del usuario de click sobre el botón ```Infraestructura clásica/Classic infrastructure``` y luego de click sobre ```Subredes VPN/VPN subnets```.
 4. seleccione el campo de ```Habilitar acceso VPN con SSL/Enable SSL VPN Access``` y de click en el botón ```Guardar```.
@@ -60,7 +60,7 @@ Una vez terminados estos dos procesos puede continuar con la instalación y conf
 Antes de iniciar el despliegue de la plataforma *VMware vSphere* es necesario crear una clave API para infraestructura clásica, para esto tenga en cuenta los siguientes pasos:
 
 1. En la consola de IBM Cloud, vaya a ```Gestionar/Manage > Acceso (IAM)/Access (IAM)```, esto lo llevara a una nueva ventana y aquí de click sobre el botón ```Claves API/API keys```.
-2. Esto lo llevara a la ventana de claves API, aqui cambie la vista a claves API de la infraestructura clásica y de click sobre el botón ```Crear una clave de infraestructura clásica/Create classic infrastructure key```.
+2. Esto lo llevara a la ventana de claves API, aquí cambie la vista a claves API de la infraestructura clásica y de click sobre el botón ```Crear una clave de infraestructura clásica/Create classic infrastructure key```.
 3. Luego de esto copie y descargue la clave de API en un lugar seguro para poder utilizarla mas adelante.
 
 <p align="center">
@@ -190,22 +190,22 @@ Una vez aquí busque el link de descarga con el nombre ```VMware-VCSA-all-6.7.0-
 </p>
 
    * **STAGE 2**
-   * Luego de terminar la configuracion del Stage 1 se abrira de manera automatica el Stage 2, en caso de que esto no suceda siga las instrucciones de la ventana emergente para acceder a la congfiguracion del stage 2 como se muestra en la siguiente imagen.
+   * Luego de terminar la configuración del Stage 1 se abrirá de manera automática el Stage 2, en caso de que esto no suceda siga las instrucciones de la ventana emergente para acceder a la configuración del stage 2 como se muestra en la siguiente imagen.
    <p align="center">
 <img width="800" alt="img8" src=Imagenes/Error.png>
 </p>
 
-   * Una vez se encuentre en la pestaña de configuracion del stage 2 tenga en cuenta los sigueintes pasos.
+   * Una vez se encuentre en la pestaña de configuración del stage 2 tenga en cuenta los siguientes pasos.
    * Ingrese el usuario y contraseña que le asigno al vCenter Server Appliance anteriormente
    * ```Introduction```: Lea la información y de click en ```Next```.
-   * ```Appliance configuration```: Lea la configuracion y asegurese que todos los datos esten correctos, luego de click en ```Next```.
+   * ```Appliance configuration```: Lea la configuración y asegúrese que todos los datos estén correctos, luego de click en ```Next```.
    * ```SSO Configuration```
       * ```Single Sign-On domain name```: Ingrese un nombre distintivo para el dominio del SSO.
       * ```Single Sign-On password```: Ingrese una contraseña teniendo en cuenta las especificaciones requeridas.
       * De click en ```Next```.
-   * ```Configure CEIP```: Lea la informacion, si esta de acuerdo seleccione la casilla de ```Join the VMware's Customer Experience Improvement Program (CEIP)``` y de click en ```Next```.
-   * ```Ready to Complete```: Verifique la informacion y de click en ```Finish```.
-   * Espere a que termine la instalacion del segundo Stage.
+   * ```Configure CEIP```: Lea la información, si esta de acuerdo seleccione la casilla de ```Join the VMware's Customer Experience Improvement Program (CEIP)``` y de click en ```Next```.
+   * ```Ready to Complete```: Verifique la información y de click en ```Finish```.
+   * Espere a que termine la instalación del segundo Stage.
 
 <p align="center">
 <img width="800" alt="img8" src=Imagenes/ST2.gif>
@@ -238,18 +238,18 @@ Para esta segunda opción es necesario desplegar una VSI Windows de infraestruct
 <img width="800" alt="img8" src=Imagenes/OP2.gif>
 </p>
 
-## Configuracion
-Una vez desplegado el vCenter Server Appliance se puede pasar a la configuracion de este, para hacer esto tenga en cuenta los siguientes pasos:
+## Configuración
+Una vez desplegado el vCenter Server Appliance se puede pasar a la configuración de este, para hacer esto tenga en cuenta los siguientes pasos:
 
-1. Ingrese a la pestaña de configucacion del vCenter vSphere Client de la VSI creada anteriormente mediante cualquiera de las dos opciones propuestas, para esto tenga en cuenta los sigueintes pasos:
+1. Ingrese a la pestaña de configuración del vCenter vSphere Client de la VSI creada anteriormente mediante cualquiera de las dos opciones propuestas, para esto tenga en cuenta los siguientes pasos:
    * Desde la consola de *IBM Cloud* diríjase a la lista de recursos, una vez aquí busque la VSI que desplego anteriormente y de click sobre esta.
-   * Esto lo llevara a la pestañana de ```Overview```, aqui copie la IP publica de la maquina y peguela en un buscador para acceder a una pestañana principal de VMware.
-   * De click sobre el boton ```LAUNCH VSPHERE CLIENT (HTML 5)```.
+   * Esto lo llevara a la pestaña de ```Overview```, aquí copie la IP publica de la maquina y péguela en un buscador para acceder a una pestaña principal de VMware.
+   * De click sobre el botón ```LAUNCH VSPHERE CLIENT (HTML 5)```.
    * Esto lo llevara a la pestaña de inicio de VMware vCenter Single Sign-on (En caso de que ocurra un error edite el archivo de Hosts en su computador para que este reconozca la IP publica asociada al nombre de la instancia de la VSI)
    * Ingrese el usuario y la contraseña del vCenter, estos los encuentra en la pestaña ```Passwords```.
 
-2. Cree un Datacenter, para esto tenga en cuenta los sigueintes pasos:
-   * De click izquierdo sobre el nombre de la VSI, esto abrira un menu emergente, aqui de click sobre ```New Datacenter```.
+2. Cree un Datacenter, para esto tenga en cuenta los siguientes pasos:
+   * De click izquierdo sobre el nombre de la VSI, esto abrirá un menú emergente, aquí de click sobre ```New Datacenter```.
    * Ingrese un nombre distintivo para el Datacenter y de click en ```Next```.
 
 3. Cree un CLuster, para esto tenga en cuenta los siguientes pasos:
