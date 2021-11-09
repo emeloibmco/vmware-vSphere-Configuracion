@@ -234,6 +234,9 @@ Para esta segunda opción es necesario desplegar una VSI Windows de infraestruct
       *  ```Private VLAN```: Seleccione la misma VLAN en la que esta ubicado el Host. Para ver esta información diríjase a la lista de recursos y en la pestaña de ```Devices```encontrara el Host creado anteriormente de click sobre el nombre, esto lo llevara a la pestaña de ```overview```, en esta pestaña en la sección de ```Network details``` encontrara las VLANs asociadas a cada interfaz.
    *  Luego de completar esta información de click sobre el botón ```Crear```.
 
+<p align="center">
+<img width="800" alt="img8" src=Imagenes/OP2.gif>
+</p>
 
 
 
