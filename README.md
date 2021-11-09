@@ -238,6 +238,25 @@ Para esta segunda opción es necesario desplegar una VSI Windows de infraestruct
 <img width="800" alt="img8" src=Imagenes/OP2.gif>
 </p>
 
+## Configuracion
+Una vez desplegado el vCenter Server Appliance se puede pasar a la configuracion de este, para hacer esto tenga en cuenta los siguientes pasos:
+
+1. Ingrese a la pestaña de configucacion del vCenter vSphere Client de la VSI creada anteriormente mediante cualquiera de las dos opciones propuestas, para esto tenga en cuenta los sigueintes pasos:
+   * Desde la consola de *IBM Cloud* diríjase a la lista de recursos, una vez aquí busque la VSI que desplego anteriormente y de click sobre esta.
+   * Esto lo llevara a la pestañana de ```Overview```, aqui copie la IP publica de la maquina y peguela en un buscador para acceder a una pestañana principal de VMware.
+   * De click sobre el boton ```LAUNCH VSPHERE CLIENT (HTML 5)```.
+   * Esto lo llevara a la pestaña de inicio de VMware vCenter Single Sign-on (En caso de que ocurra un error edite el archivo de Hosts en su computador para que este reconozca la IP publica asociada al nombre de la instancia de la VSI)
+   * Ingrese el usuario y la contraseña del vCenter, estos los encuentra en la pestaña ```Passwords```.
+
+2. Cree un Datacenter, para esto tenga en cuenta los sigueintes pasos:
+   * De click izquierdo sobre el nombre de la VSI, esto abrira un menu emergente, aqui de click sobre ```New Datacenter```.
+   * Ingrese un nombre distintivo para el Datacenter y de click en ```Next```.
+
+3. Cree un CLuster, para esto tenga en cuenta los siguientes pasos:
+   * De click izquierdo sobre el nombre del Datacenter creado anteriormente, luego de esto de click sobre ```New Cluster```.
+   * Ingrese un nombre distintivo para el cluster y de click en ```OK```.
+
+
 
 
 
