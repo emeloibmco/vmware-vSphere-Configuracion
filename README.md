@@ -9,6 +9,7 @@
 4. [Despliegue de Baremetal con VMware Solutions vCenter server](#despliegue-de-baremetal-con-vmware-solutions-VCenter-server)
     * [Opción 1: VCenter appliance](#opción-1-vcenter-appliance) 
     * [Opción 2: Virtual server](#opción-2-virtual-server) 
+5. [Configuración vCenter Server]
 6. [Referencias](#referencias-)
 7. [Autores](#autores-black_nib)
 
@@ -238,7 +239,7 @@ Para esta segunda opción es necesario desplegar una VSI Windows de infraestruct
 <img width="800" alt="img8" src=Imagenes/OP2.gif>
 </p>
 
-## Configuración
+## Configuración vCenter Server
 Una vez desplegado el vCenter Server Appliance se puede pasar a la configuración de este, para hacer esto tenga en cuenta los siguientes pasos:
 
 1. Ingrese a la pestaña de configuración del vCenter vSphere Client de la VSI creada anteriormente mediante cualquiera de las dos opciones propuestas, para esto tenga en cuenta los siguientes pasos:
