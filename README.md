@@ -256,6 +256,12 @@ Una vez desplegado el vCenter Server Appliance se puede pasar a la configuració
    * De click izquierdo sobre el nombre del Datacenter creado anteriormente, luego de esto de click sobre ```New Cluster```.
    * Ingrese un nombre distintivo para el cluster y de click en ```OK```.
 
+<p align="center">
+<img width="800" alt="img8" src=Imagenes/Configuracion.gif>
+</p>
+
+
+
 4. Agregue un Host, para esto tenga en cuenta los siguientes pasos:
    * De click izquierdo sobre el nombre del Datacenter creado anteriormente, luego de esto de click sobre ```Add Host```.
    * **Name and Location**
