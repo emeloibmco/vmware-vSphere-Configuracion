@@ -282,29 +282,56 @@ Una vez desplegado el vCenter Server Appliance se puede pasar a la configuració
 </p>
 
 
-### Configuración segun los requerimientos
+### Configuración según los requerimientos
 
 crear un switch distribuido en la capa de vCenter con las configuraciones de los Hosts embebidas 
-switch estandar creados Host a Host
+switch estándar creados Host a Host
 
-Creacion de un switch virtual estandar adicional
+Creación de un switch virtual estándar adicional
 
-Antes de crear el switch adicional es necesario revisar que adaptadores estan conectados al switch existente, en este caso al switch vmnic0, para hacer esto tenga en cuenta los siguientes pasos:
+Antes de crear el switch adicional es necesario revisar que adaptadores están conectados al switch existente, en este caso al switch vSwitch0, para hacer esto tenga en cuenta los siguientes pasos:
 
-1. De click sobre el Host desplegado anteriromente, luego de esto de click sobre el boton ```Configure```.
-2. De click sobre el boton ```Physical adapters``` en el grupo ```Networking```.
-3. Esto desplegara una nueva ventana en donde se pueden ver los adaptadores fisicos, su configuracion y a que switch estan conectados si es el caso.
+1. De click sobre el Host desplegado anteriormente, luego de esto de click sobre el botón ```Configure```.
+2. De click sobre el botón ```Physical adapters``` en el grupo ```Networking```.
+3. Esto desplegara una nueva ventana en donde se pueden ver los adaptadores físicos, su configuración y a que switch están conectados si es el caso.
 
-Luego de esto ya se puede pasar a crear el virtual switch adicional, en este caso se creara un v-switch publico para conectar en este las interfaces 1 y 3 que son las encargadas del trafico publico en la maquina, para esto tenga en cuenta los siguientes pasos:
+Luego de esto ya se puede pasar a crear el virtual switch adicional, en este caso se creará un v-switch publico para conectar en este las interfaces 1 y 3 que son las encargadas del trafico publico en la maquina, para esto tenga en cuenta los siguientes pasos:
 
-1. De click sobre el Host desplegado anteriromente, luego de esto de click sobre el boton ```Configure```.
-2. De click sobre el boton ```Virtual switches``` en el grupo ```Networking```.
-3. Esto abrira una ventana de configuracion, aqui ingrese la siguiente informacion:
+1. De click sobre el Host desplegado anteriormente, luego de esto de click sobre el botón ```Configure```.
+2. De click sobre el botón ```Virtual switches``` en el grupo ```Networking```.
+3. De click sobre el botón ```Add Networking```.
+4. Esto abrirá una ventana de configuración, aquí ingrese la siguiente información:
    * ```Select connection type```: Seleccione ```Virtual Machine Port Group for a Standard Switch```.
    * ```Select target device```: Seleccione ```New Standard switch```.
-   * ```Create a Standard Switch```: de click en el boton ```+``` para asignar los adaptadores deseados en el nuevo switch, luego de esto seleccione el adaptador vmnic1 y repita el proceso para el vmnic3. Si decea balancear cargas en los adaptadores utilice las flechas azules de la parte superior para asignar un adaptador a la categoria de ```Standby adapters```.
-   * 
+   * ```Create a Standard Switch```: de click en el botón ```+``` para asignar los adaptadores deseados en el nuevo switch, luego de esto seleccione el adaptador vmnic1 y repita el proceso para el vmnic3. Si desea balancear cargas en los adaptadores utilice las flechas azules de la parte superior para asignar un adaptador a la categoría de ```Standby adapters```.
+   * ```Connection settings```:
+      * ```Network label```: Ingrese un nombre distintivo.
+      * ```VLAN ID```: Seleccione ```None (0)``` para seleccionar la VLAN primaria.
+   * ```Ready to Complete```: De click en ```Finish```.
 
+Luego de crear el switch adicional puede editar el switch que estaba creado anteriormente para agregar la interfaz 2, para esto tenga en cuenta los siguientes pasos:
+
+1. De click sobre el Host desplegado anteriormente, luego de esto de click sobre el botón ```Configure```.
+2. De click sobre el botón ```Virtual switches``` en el grupo ```Networking```.
+3. De click sobre el nombre el virtual switch que desea editar, en este caso es el vSwitch0, luego de esto de click sobre el botón ```Manage physical Adapters```.
+4. Esto abrirá una nueva pestaña de configuración, aquí de click sobre el botón ```+```para asignar un nuevo adaptador al switch, aquí de click sobre la instancia vmnic2 y ubíquela en la región de ```Standby adapters```para generar el balanceo de cargas.
+
+Adicionar un vKernel a un vSwitch para conectarse al Host mediante la IP publica sin necesidad de utilizar VPNs 
+
+para esto tenga en cuenta los siguientes pasos:
+1. De click sobre el Host desplegado anteriormente, luego de esto de click sobre el botón ```Configure```.
+2. De click sobre el botón ```Virtual switches``` en el grupo ```Networking```.
+3. De click sobre el nombre del vSwitch al cual desea adicionarle un vKernel, en este caso es el vSwitch1, luego de esto de click sobre el botón ```Add Networking```.
+4. Esto abrirá una ventana de configuración, aquí ingrese la siguiente información:
+   * ```Select connection type```: Seleccione ```VMKernel Network Adapter```.
+   * ```Select target device```: Seleccione ```Select an existing standard switch```.
+   * ```Port properties```:
+      * ```Network label```: Ingrese un nombre distintivo.
+      * ```VLAN ID```: Seleccione ```None (0)``` para seleccionar la VLAN primaria.
+      * ```IP settings```: Seleccione ```IPv4```.
+      * ```Enabled services```: Seleccione ```Management```.
+   * ```IPv4 settings```: Seleccione ```Use static IPv4 settings```, pegue la dirección IP publica del Host de vSphere, ingrese una mascara de subnet y pegue la dirección IP del gateway del Host.
+   * ```Ready to Complete```: De click en ```Finish```.
 
 
 
