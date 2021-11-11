@@ -314,6 +314,11 @@ Luego de crear el switch adicional puede editar el switch que estaba creado ante
 3. De click sobre el nombre el virtual switch que desea editar, en este caso es el vSwitch0, luego de esto de click sobre el botón ```Manage physical Adapters```.
 4. Esto abrirá una nueva pestaña de configuración, aquí de click sobre el botón ```+```para asignar un nuevo adaptador al switch, aquí de click sobre la instancia vmnic2 y ubíquela en la región de ```Standby adapters```para generar el balanceo de cargas.
 
+<p align="center">
+<img width="800" alt="img8" src=Imagenes/VS2.gif>
+</p>
+
+
 Adicionar un vKernel a un vSwitch para conectarse al Host mediante la IP publica sin necesidad de utilizar VPNs 
 
 para esto tenga en cuenta los siguientes pasos:
