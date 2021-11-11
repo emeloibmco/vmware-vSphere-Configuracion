@@ -245,6 +245,7 @@ Para esta segunda opción es necesario desplegar una VSI Windows de infraestruct
 Una vez desplegado el vCenter Server Appliance se puede pasar a la configuración de este, para hacer esto tenga en cuenta los siguientes pasos:
 
 1. Ingrese a la pestaña de configuración del vCenter vSphere Client de la VSI creada anteriormente mediante cualquiera de las dos opciones propuestas, para esto tenga en cuenta los siguientes pasos:
+   * Ejecute la conexión en MotionPro con el perfil de la ubicación en la cual se encuentran tanto el Host como la VSI desplegados (en este caso es Dallas 12).
    * Desde la consola de *IBM Cloud* diríjase a la lista de recursos, una vez aquí busque la VSI que desplego anteriormente y de click sobre esta.
    * Esto lo llevara a la pestaña de ```Overview```, aquí copie la IP publica de la maquina y péguela en un buscador para acceder a una pestaña principal de VMware.
    * De click sobre el botón ```LAUNCH VSPHERE CLIENT (HTML 5)```.
@@ -284,20 +285,13 @@ Una vez desplegado el vCenter Server Appliance se puede pasar a la configuració
 
 ### Configuración según los requerimientos
 
-crear un switch distribuido en la capa de vCenter con las configuraciones de los Hosts embebidas 
-switch estándar creados Host a Host
-
-Creación de un switch virtual estándar adicional
+#### Creación de un switch virtual estándar adicional
 
 Antes de crear el switch adicional es necesario revisar que adaptadores están conectados al switch existente, en este caso al switch vSwitch0, para hacer esto tenga en cuenta los siguientes pasos:
 
 1. De click sobre el Host desplegado anteriormente, luego de esto de click sobre el botón ```Configure```.
 2. De click sobre el botón ```Physical adapters``` en el grupo ```Networking```.
 3. Esto desplegara una nueva ventana en donde se pueden ver los adaptadores físicos, su configuración y a que switch están conectados si es el caso.
-
-<p align="center">
-<img width="800" alt="img8" src=Imagenes/Rev.gif>
-</p>
 
 Luego de esto ya se puede pasar a crear el virtual switch adicional, en este caso se creará un v-switch publico para conectar en este las interfaces 1 y 3 que son las encargadas del trafico publico en la maquina, para esto tenga en cuenta los siguientes pasos:
 
@@ -312,10 +306,6 @@ Luego de esto ya se puede pasar a crear el virtual switch adicional, en este cas
       * ```Network label```: Ingrese un nombre distintivo.
       * ```VLAN ID```: Seleccione ```None (0)``` para seleccionar la VLAN primaria.
    * ```Ready to Complete```: De click en ```Finish```.
-
-<p align="center">
-<img width="800" alt="img8" src=Imagenes/VSAd.gif>
-</p>
 
 Luego de crear el switch adicional puede editar el switch que estaba creado anteriormente para agregar la interfaz 2, para esto tenga en cuenta los siguientes pasos:
 
