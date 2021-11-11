@@ -345,7 +345,9 @@ para esto tenga en cuenta los siguientes pasos:
    * ```IPv4 settings```: Seleccione ```Use static IPv4 settings```, pegue la dirección IP publica del Host de vSphere, ingrese una mascara de subnet y pegue la dirección IP del gateway del Host.
    * ```Ready to Complete```: De click en ```Finish```.
 
-
+<p align="center">
+<img width="800" alt="img8" src=Imagenes/vKernel.gif>
+</p>
 
 # Referencias 📖
 
