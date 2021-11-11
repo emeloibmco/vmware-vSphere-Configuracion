@@ -295,6 +295,10 @@ Antes de crear el switch adicional es necesario revisar que adaptadores están c
 2. De click sobre el botón ```Physical adapters``` en el grupo ```Networking```.
 3. Esto desplegara una nueva ventana en donde se pueden ver los adaptadores físicos, su configuración y a que switch están conectados si es el caso.
 
+<p align="center">
+<img width="800" alt="img8" src=Imagenes/Rev.gif>
+</p>
+
 Luego de esto ya se puede pasar a crear el virtual switch adicional, en este caso se creará un v-switch publico para conectar en este las interfaces 1 y 3 que son las encargadas del trafico publico en la maquina, para esto tenga en cuenta los siguientes pasos:
 
 1. De click sobre el Host desplegado anteriormente, luego de esto de click sobre el botón ```Configure```.
@@ -308,6 +312,10 @@ Luego de esto ya se puede pasar a crear el virtual switch adicional, en este cas
       * ```Network label```: Ingrese un nombre distintivo.
       * ```VLAN ID```: Seleccione ```None (0)``` para seleccionar la VLAN primaria.
    * ```Ready to Complete```: De click en ```Finish```.
+
+<p align="center">
+<img width="800" alt="img8" src=Imagenes/VSAd.gif>
+</p>
 
 Luego de crear el switch adicional puede editar el switch que estaba creado anteriormente para agregar la interfaz 2, para esto tenga en cuenta los siguientes pasos:
 
