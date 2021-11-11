@@ -307,6 +307,11 @@ Luego de esto ya se puede pasar a crear el virtual switch adicional, en este cas
       * ```VLAN ID```: Seleccione ```None (0)``` para seleccionar la VLAN primaria.
    * ```Ready to Complete```: De click en ```Finish```.
 
+
+<p align="center">
+<img width="800" alt="img8" src=Imagenes/VSAd.gif>
+</p>
+
 Luego de crear el switch adicional puede editar el switch que estaba creado anteriormente para agregar la interfaz 2, para esto tenga en cuenta los siguientes pasos:
 
 1. De click sobre el Host desplegado anteriormente, luego de esto de click sobre el botón ```Configure```.
