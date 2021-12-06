@@ -349,6 +349,34 @@ para esto tenga en cuenta los siguientes pasos:
 <img width="800" alt="img8" src=Imagenes/vKernel.gif>
 </p>
 
+
+#### Crear una imagen Ubuntu.vmdk
+Antes de iniciar con la creación de la maquina virtual es necesario subir el archivo .vmdk al datastore que creamos anteriormente, para esto tenga en cuenta los siguientes pasos:
+1. De click sobre la pestaña de ```Storage``` y despliegue los menús hasta encontrar el datastore creado anteriormente, de click sobre este.
+2. una vez se encuentre en la pestaña de configuración del datastore, de click sobre ```Files```
+3. Aquí de click sobre el botón de ```New folder``` e ingrese un nombre apropiado para la carpeta, en este caso puede ser ```Ubuntu VM```.
+4. De click sobre la carpeta que acabo de crear y de click sobre el botón ```Upload Files``` y seleccione el archivo .mkv que tiene descargado en su PC.
+
+Luego de esto puede continuar con la creación de la maquina virtual, para esto tenga en cuenta los siguientes pasos:
+1. De click sobre la pestaña de ```Storage``` y despliegue los menús hasta encontrar el datastore creado anteriormente, de click sobre este.
+2. una vez se encuentre en la pestaña de configuración del datastore, de click sobre ```VMs```.
+3. Aquí de click sobre el botón de ```Actions``` y seleccione ```New Virtual Machine```. esto desplegara un nuevo menú de configuración, aquí ingrese la siguiente información:
+   * ```Select a creation type```: seleccione la opción ```Create a new virtual machine```.
+   * ```Select a name and folder```: Ingrese un nombre distintivo para la maquina virtual y seleccione la ubicación que desee utilizar para desplegarla.
+   * ```Select a compute resource```: seleccione el Host creado anteriormente.
+   * ```Select storage```: seleccione el datastorage creado anteriormente.
+   * ```Select compatibility```: Seleccione la opción ```ESXi 6.7 and later```.
+   * ```Select a guest OS```: 
+      * ```Guest OS Family```: Seleccione ```Linux```.
+      * ```Guest OS Version```: Seleccione ```Ubuntu Linux (64.bit)```.
+   * ```Customize hardware```: 
+      * ```CPU```: seleccione la cantidad que desee.
+      * ```Memory```: Seleccione la cantidad que desee.
+      * ```New Hard disk```: Elimine el disco que se genera por defecto de click sobre el botón ```ADD NEW DEVICE```y seleccione ```Existing Hard Disk```, esto abrira una nueva pestaña, aquí seleccione el disco que adiciono anteriormente en el datastore.
+      * Despliegue el menú de ```New Hard disk``` y cambie el valor en ```Virtual Device Node```por ```IDE 0```,```IDE (0:0) New Hard Disk```.
+   * ```Ready to complete```: De click en ```Finish```.
+
+
 # Referencias 📖
 
 * [Gestión de claves de API de la infraestructura clásica](https://cloud.ibm.com/docs/account?topic=account-classic_keys#create-classic-infrastructure-key).
