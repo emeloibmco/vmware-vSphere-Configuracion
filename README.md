@@ -358,8 +358,8 @@ Antes de iniciar con la creación de la maquina virtual es necesario subir el ar
 4. De click sobre la carpeta que acabo de crear y de click sobre el botón ```Upload Files``` y seleccione el archivo .mkv que tiene descargado en su PC.
 
 Luego de esto puede continuar con la creación de la maquina virtual, para esto tenga en cuenta los siguientes pasos:
-1. De click sobre la pestaña de ```Storage``` y despliegue los menús hasta encontrar el datastore creado anteriormente, de click sobre este.
-2. una vez se encuentre en la pestaña de configuración del datastore, de click sobre ```VMs```.
+1. De click sobre El Host que acabomos de crear.
+2. una vez se encuentre en la pestaña de configuración del Host, de click sobre ```VMs```.
 3. Aquí de click sobre el botón de ```Actions``` y seleccione ```New Virtual Machine```. esto desplegara un nuevo menú de configuración, aquí ingrese la siguiente información:
    * ```Select a creation type```: seleccione la opción ```Create a new virtual machine```.
    * ```Select a name and folder```: Ingrese un nombre distintivo para la maquina virtual y seleccione la ubicación que desee utilizar para desplegarla.
