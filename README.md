@@ -375,6 +375,9 @@ Luego de esto puede continuar con la creación de la maquina virtual, para esto 
       * ```New Hard disk```: Elimine el disco que se genera por defecto de click sobre el botón ```ADD NEW DEVICE```y seleccione ```Existing Hard Disk```, esto abrira una nueva pestaña, aquí seleccione el disco que adiciono anteriormente en el datastore.
       * Despliegue el menú de ```New Hard disk``` y cambie el valor en ```Virtual Device Node```por ```IDE 0```,```IDE (0:0) New Hard Disk```.
    * ```Ready to complete```: De click en ```Finish```.
+<p align="center">
+<img width="800" alt="img8" src=Imagenes/VM.gif>
+</p>
 
 
 # Referencias 📖
