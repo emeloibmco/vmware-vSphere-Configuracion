@@ -68,7 +68,7 @@ Antes de iniciar el despliegue de la plataforma *VMware vSphere* es necesario cr
 <img width="800" alt="img8" src=Imagenes/API.png>
 </p>
 
-## Despliegue de Baremetal con VMware Solutions vCenter server
+## Despliegue de Baremetal con VMware Solutions vSphere
 
 Antes de iniciar con el despliegue vCenter Server Appliance mediante cualquiera de las dos opciones es necesario crear el Host de vSphere con recursos suficientes para dar soporte al VMware vCenter server Appliance, para esto tenga en cuenta los siguientes pasos:
 
